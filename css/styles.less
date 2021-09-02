@@ -1,0 +1,488 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+
+}
+
+@font-face {
+  font-family: 'PT Serif', sans-serif;
+  src: url(../fonts/PT_Serif/PTSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Couture', sans-serif;
+  src: url(../fonts/couture/couture-bld.otf);
+  src: url(../fonts/couture/couture-bldit.otf);
+}
+
+@font-face {
+  font-family: 'Myriad Pro', sans-serif;
+  src: local('Myriad Pro Regular'), url(../fonts/myriad-pro/MYRIADPRO-REGULAR.woff) format('woff');
+}
+
+html, body {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 105px;
+}
+
+.promo {
+  background: url(../img/promo-background.png) center center/cover no-repeat;
+  min-height: 700px;
+  padding-top: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav_item a {
+  font-family: 'Montserrat-Regular', sans-serif;
+  // src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  padding: 11px 15px;
+
+}
+
+.nav_item:hover a {
+  color: #fff;
+  background-color: #d03958;
+  border-radius: 5px;
+  transition: all .3ms ease;
+}
+
+.promo_content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 170px;
+  position: relative;
+}
+
+.promo_text {
+  width: 50%;
+}
+
+.promo_title {
+
+  font-size: 90px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(208, 57, 88);
+  font-weight: bold;
+  line-height: 80px;
+  // width: 493px;
+  // height: 146px;
+}
+
+.promo_title span {
+  color: #000;
+}
+
+.promo_disc {
+  font-size: 20px;
+  font-family: "PTSerif", sans-serif;
+  color: rgb(22, 22, 22);
+  line-height: 1.4;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #d03958;
+  padding: 30px 25px;
+  position: relative;
+  bottom: -75px;
+}
+
+.form_title {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+.form_input {
+  padding: 19px 247px 23px 19px;
+  font-family: 'PT Serif', serif;
+  font-size: 20px;
+  color: #b5b5b5;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.form_input:last-child {
+  margin-bottom: 27px;
+}
+
+.form_input:nth-child(5) {
+  margin-bottom: 27px;
+}
+
+.form_checkbox {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form_checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: "PTSerif", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.25;
+  margin-bottom: 20px;
+  //padding-bottom: 20px;
+}
+
+.form_checkbox + label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.form_checkbox:checked + label::before {
+  background-image: url("../img/check-mark.svg");
+}
+
+.form_btn {
+  padding: 20px 140px;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  border-radius: 5px;
+  border: none;
+  //transition: all 0.3ms ease;
+}
+
+//.form_btn {
+//  box-shadow: 5px 5px 0 0;
+//}
+
+
+// our-services section
+
+.our-service {
+  padding: 40px 0;
+}
+
+.our_service_title {
+  font-size: 50px;
+  font-family: "Couture", sans-serif;
+  color: rgb(208, 57, 88);
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.our_service_title span {
+  color: #000;
+}
+
+.our-service-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.our-service-disc {
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  font-style: italic;
+  color: rgb(22, 22, 22);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.our-service-img {
+  margin-bottom: 45px;
+}
+
+.our-service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+// our-story container
+
+.our-story {
+  background-color: #d03958;
+  padding: 30px 0;
+}
+
+.our-story_content {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.our-story-desc {
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+}
+
+.our-story_button {
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(22, 22, 22);
+  line-height: 1.273;
+  text-align: center;
+  padding: 24px 50px;
+  background-color: #e3d5b8;
+  border-radius: 5px;
+  width: 204px;
+  height: 23px;
+  margin-top: auto;
+  transition: all .4ms ease;
+}
+
+.our-story_button:hover {
+  background-color: #fff;
+}
+
+//pricing section
+
+.pricing {
+  background-color: #e3d5b8;
+  padding-top: 60px;
+}
+
+.pricing_title {
+  font-size: 50px;
+  color: rgb(31, 31, 31);
+  line-height: 1.6;
+  font-family: "Myriad Pro", sans-serif;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing_content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pricing-item {
+  background-color: white;
+  padding: 35px 60px 0 60px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.triangle p {
+  font-size: 16px;
+  font-family: "PTSerif", sans-serif;
+  color: rgb(31, 31, 31);
+  line-height: 1.75;
+  text-align: center;
+  -moz-transform: matrix(0.67739919539163, -0.73561561299552, 0.73561561299552, 0.67739919539163, 0, 0);
+  -webkit-transform: matrix(0.67739919539163, -0.73561561299552, 0.73561561299552, 0.67739919539163, 0, 0);
+  -ms-transform: matrix(0.67739919539163, -0.73561561299552, 0.73561561299552, 0.67739919539163, 0, 0);
+  position: absolute;
+}
+
+.pricing-item p {
+  font-size: 20px;
+  font-family: "PTSerif", sans-serif;
+  color: rgb(22, 22, 22);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.pricing-item .pricing_cost {
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  color: #d03958;
+  font-weight: bold;
+  line-height: 1.333;
+  margin: 0;
+}
+
+.pricing_btn {
+  display: block;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(22, 22, 22);
+  line-height: 1.273;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 60px;
+  background-color: #e3d5b8;
+  border-radius: 5px;
+  margin-top: 35px;
+  transition: all .4ms ease;
+}
+
+.pricing_btn:hover {
+  background-color: #d03958;
+  color: #fff;
+}
+
+
+#pricing-item-business {
+  background-image: url("../img/ritangle.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+//reviews section
+
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 140px;
+}
+
+
+.testimonial_title {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(31, 31, 31);
+  font-weight: bold;
+  text-align: center;
+}
+
+.gallery_title {
+  font-size: 50px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: normal;
+  color: rgb(208, 57, 88);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.testimonial_item {
+  margin-top: 34px;
+  display: flex;
+}
+
+.testimonial_desc {
+  width: 450px;
+}
+
+.testimonial_desc_img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  left: -60px;
+  top: 15px;
+}
+
+.testimonial_desc:hover {
+  background-color: #e3d5b8;
+}
+
+.testimonial_desc > p {
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: normal;
+  color: rgb(22, 22, 22);
+  line-height: 1.4;
+  padding-left: 25px;
+}
+
+.testimonial_desc h3 {
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: normal;
+  color: rgb(208, 57, 88);
+  line-height: 1.4;
+  padding-left: 25px;
+
+}
+
+.gallery_item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+#gallery_view_pictures {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(208, 57, 88);
+  line-height: 1.4;
+}
+
+#gallery_view_pictures:hover {
+  color: #161616;
+}
+
+.gallery_view {
+  text-align: center;
+}
+
+#gallery_view:hover {
+  color: #161616;
+}
+
+#bottom {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(22, 22, 22);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#bottom p {
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.1;
+}
+
+
+.coon:hover {
+  color: #e3d5b8;
+}
+
+.coon {
+  color: #c73755;
+  text-decoration: none;
+}
+
+.coon:hover {
+  color: #e3d5b8;
+}
